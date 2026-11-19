@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NISM XV – Chapter 6 MCQs</title>
+<style>
+:root{--bg:#f6f7f9;--cd:#fff;--tx:#1d2330;--bd:#dde1e8;--ac:#2f5bd3;--ok:#0f7b45;--okb:#e3f5ea;--no:#b42318;--nob:#fdeaea}
+@media(prefers-color-scheme:dark){:root{--bg:#14171d;--cd:#1d222b;--tx:#e8ebf0;--bd:#323946;--ac:#7c9cf5;--ok:#59d68f;--okb:#12301f;--no:#ff8c82;--nob:#3a1816}}
+body{margin:0;font:16px/1.5 system-ui,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+.w{max-width:800px;margin:auto;padding:14px}header{position:sticky;top:0;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--bd)}
+h1{font-size:18px;margin:0 0 6px}.s{display:inline-block;background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:3px 10px;margin:2px;font-size:14px}
+button{font:inherit;font-size:14px;padding:5px 12px;border-radius:8px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);cursor:pointer}
+.q{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:12px 0}.qt{font-weight:600;margin-bottom:8px}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:8px 12px}.o.ok{background:var(--okb);border-color:var(--ok);color:var(--ok);font-weight:600}.o.no{background:var(--nob);border-color:var(--no);color:var(--no)}
+.ex{display:none;margin-top:8px;padding:8px 12px;border-left:4px solid var(--ok);background:var(--okb);border-radius:4px;font-size:14px}.q.d .ex{display:block}
+#r{display:none;border:2px solid var(--ac);border-radius:12px;padding:12px;margin:12px 0;background:var(--cd)}
+</style></head><body><div class="w">
+<header><h1>NISM-Series-XV · Chapter 6: Industry Analysis</h1>
+<span class="s">Answered <b id="a">0</b>/<b id="t"></b></span><span class="s">Score <b id="c">0</b></span>
+<button id="sa">Show all answers</button> <button id="f">Finish</button> <button id="rs">Restart</button></header>
+<p style="font-size:13px">Scoring as in the exam: +1 correct, −0.25 wrong. Click an option to reveal the answer and a one-line explanation.</p>
+<div id="r"></div><div id="l"></div></div>
+<script>
+const Q=[
+["An industry is best described as:",["A grouping of firms offering the same or similar products to serve the same customer need","A broad category of unrelated firms","A government department","A stock index"],0,"E.g., auto, steel, telecom, insurance."],
+["A business sector is:",["A single company","A broad category comprising similar and related industries","A stock exchange segment","A tax category"],1,"E.g., financial services sector includes banking and insurance."],
+["An economic sector represents:",["A set of listed firms","Only exporters","Segments contributing to national income, like agriculture, manufacturing, utilities, services","Only PSUs"],2,"It is the broadest classification."],
+["Industry analysis helps understand:",["Only dividends","Only prices","Only taxes","How each industry is impacted under current economic conditions"],3,"Economic analysis shows the general direction; industry analysis narrows it down."],
+["The very first step in an industry analysis is to:",["Define the industry in which the company operates","Estimate target price","Compute EPS","Check dividends"],0,"Definition is not always easy."],
+["Standard industry classification systems include:",["BSE and NSE","NIC (India), GICS and NAICS (US)","SEBI and RBI","FIFO and LIFO"],1,"They may not capture the substance of an industry."],
+["NIC puts all passenger car makers in a single class, but analysts may view luxury and entry-level as different because:",["They are taxed equally","They have the same demand","Their dynamics are very different","They have no competition"],2,"Dynamics differ across segments."],
+["PVR Cinemas competes with:",["Only other cinemas","Only banks","Only theatres abroad","OTT platforms, satellite channels, live theatre and sporting leagues"],3,"A narrow definition risks overlooking competitors."],
+["Defining cameras as a standalone industry may cause analysts to:",["Ignore competition from mobile phones","Overstate mobile sales","Ignore taxes","Ignore costs"],0,"Mobile phones eroded camera sales."],
+["GICS is a ____ tier hierarchical classification:",["Three","Four","Five","Six"],1,"Sectors, industry groups, industries and sub-industries."],
+["GICS is divided into how many sectors?",["5","7","11","25"],2,"There are 11 sectors, 25 industry groups, 74 industries and 163 sub-industries."],
+["Based on cyclicality, industries are classified into:",["Fast, medium, slow","Large, mid, small","Old, new, mixed","Defensive, semi-cyclical and deep cyclical"],3,"This reflects sensitivity to the economic cycle."],
+["Defensive industries have:",["Low income elasticity of demand","High income elasticity","Extreme cyclicality","No demand"],0,"Food, agricultural inputs and healthcare are examples."],
+["Consumer durables is an example of a ____ industry.",["Defensive","Semi-cyclical","Deep cyclical","Non-cyclical"],1,"Sales grow in expansion and decline in recession, but with base demand."],
+["Capital goods and steel are:",["Defensive","Semi-cyclical","Deep cyclical","Secular"],2,"Their revenues swing sharply with the economic/commodity cycle."],
+["Deep cyclical industries see massive growth at early recovery because of:",["Lower taxes","Lower rates","Higher exports","Pent-up demand and higher orders"],3,"They cut capacity plans in recessions."],
+["Measuring current market size is difficult when:",["There are many unorganised players or private firms","All firms are listed","Data is public","Only one firm exists"],0,"Information is not available in the public domain."],
+["In a top-down approach, market size is measured:",["By aggregating companies","Starting from macro-economic factors down to the industry level","Only from annual reports","By guessing"],1,"E.g., number of patients × average spend per patient."],
+["In a bottom-up approach, market size is derived by:",["Using GDP only","Using exchange rate","Using consumer surveys only","Aggregating data of individual companies"],3,"E.g., adding up hospitals' revenue from a therapy."],
+["Tyre industry: three organised players' revenue is ₹6,000, ₹8,000 and ₹10,000 crore; unorganised is 20% of total. Market size is closest to:",["₹48,000 crore","₹24,000 crore","₹30,000 crore","₹36,000 crore"],2,"Organised = ₹24,000 cr = 80%; total = ₹30,000 cr."],
+["Horizontal drilling leading to shale gas lowered hydrocarbon prices. This is a secular trend caused by:",["Regulation","Technological advancement","Demographics","Culture"],1,"New technology can change production methods."],
+["Ageing in Japan reducing beer consumption is a secular trend driven by:",["Technology","Regulation","Demographic changes","Income"],2,"Population composition changes consumption."],
+["GST reduced demand for new commercial vehicles by making logistics efficient; this is a trend driven by:",["Culture","Technology","Income","Change in regulation or government policy"],3,"Policy changes can create secular trends."],
+["Value migration occurs when a phenomenon:",["Creates long-term advantage for some entities at the cost of others","Benefits everyone equally","Has no effect","Only affects taxes"],0,"The gainer's shareholder value rises, the other's falls."],
+["Shale gas shifting value to US oil exploration is:",["Cross-industry migration","Geographic migration","Value chain migration","Intra-industry migration"],1,"Value moved across geographies."],
+["Digital cameras destroying the film roll industry is an example of:",["Geographic migration","Value chain migration","Cross-industry migration","Seasonal change"],2,"One industry gained at the cost of another."],
+["Telecom price falls benefiting digital content providers is an example of:",["Geographic migration","Cross-industry migration","Same-industry migration","Migration across the value chain"],3,"Downstream gainers vs upstream losers."],
+["Blackberry losing value to Apple is migration:",["Between companies in the same industry","Across geographies","Across industries","Across value chain"],0,"A competitive advantage was removed by disruption."],
+["The business life cycle stages are:",["Birth, death","Pioneering, growth, matured, declining, and reinvention/revival","Boom, bust","Entry, exit"],1,"Reinvention is rare."],
+["In the pioneering stage:",["Most customers already use the product","The industry declines","The concept is still being proven","Growth is steep"],2,"The industry is just taking shape."],
+["In the matured stage:",["Adoption is minimal","Concept is unproven","Growth is steepest","Most potential customers already use the product"],3,"Few new potential customers remain."],
+["In the declining stage:",["A new technology or preference replaces the product","Growth accelerates","The concept is being proven","Entry is easy"],0,"The industry loses out to alternatives."],
+["Call taxis in India declined due to:",["Higher taxes","App-based taxi aggregators","Lower fuel prices","Bank rates"],1,"The cycle ran from pioneering to decline."],
+["Industry landscaping involves studying:",["Only competitors","Only regulators","Only customers","Competitors, customers, suppliers, regulators and emerging technologies"],3,"It shows how an industry will react to external events."],
+["In industries with low competition, companies are likely to:",["Pass on input cost increases to customers","Cut prices","Lose margin","Exit"],0,"Margins remain intact."],
+["Porter's Five Forces model was developed in 1979 by:",["Warren Buffett","Charlie Munger","Michael Porter","Keynes"],2,"It analyses industry attractiveness."],
+["Porter's horizontal forces in the workbook are:",["Suppliers and buyers","Tax and cess","Price and volume","Threat of substitutes, new entrants and established rivals"],3,"Vertical forces are suppliers' and customers' bargaining power."],
+["The vertical forces in Porter's model are:",["Bargaining power of suppliers and of buyers","Rivalry","New entrants","Substitutes"],0,"The rest are horizontal."],
+["Which are 'unattractive' industries per the model?",["IT, FMCG","Aviation, telecom, retail, textile, sugar, power","Education, healthcare","Gold, silver"],1,"Forces keep profits low."],
+["Which are 'attractive' industries per the model?",["Aviation","Sugar","Education, FMCG, healthcare and IT","Textile"],2,"Forces are weak there."],
+["Buffett said: if you're in a chronically leaking boat:",["Patch the leaks","Ignore","Add more leaks","Energy is more productive in changing vessels than in patching leaks"],3,"A bad industry may not be fixed by good management."],
+["Industry rivalry is high when:",["Many firms offer undifferentiated products and switching cost is low","Few firms exist","Products are unique","Switching cost is high"],0,"E.g., aviation and telecom."],
+["Munger: if the only basis of competition is pricing, it is:",["Profitable","A self-defeating business","A monopoly","A moat"],1,"Differentiation is needed."],
+["Micromax gained 10% market share in three years by:",["Dumping","Advertising only","Special features at competitive prices","Cutting quality"],2,"Differentiation helps in intense rivalry."],
+["The telegram being replaced by SMS illustrates:",["Rivalry","Buyer power","Supplier power","Threat of substitutes"],3,"Cheaper, easier alternatives replace old products."],
+["Kodak failed because it:",["Did not move to digital to protect its film business","Over-invested in digital","Lacked brand","Was acquired"],0,"It invented the digital camera but did not adopt it."],
+["Industries with no threat of substitutes include:",["Typewriters","Power, healthcare, education","Telegram","Film cameras"],1,"They never go out of business."],
+["Threat of substitutes is high when:",["Switching cost is high","Quality is poor","Substitutes offer equal or better experience and switching cost is low","Capital is huge"],2,"Two conditions drive it."],
+["Buyers' bargaining power is high when:",["Few sellers","Differentiated products","High switching cost","Many sellers with standardised, undifferentiated products"],3,"Close substitutes also raise buyer power."],
+["Suppliers' bargaining power is high when:",["Suppliers are few, buyers many and inputs are critical","Suppliers are many","Inputs are standard","Switching is easy"],0,"Substitutes are absent."],
+["Sugar industry has strong supplier power as:",["Cane price is government decided considering farmers","Cane is imported","Prices are free","Suppliers are many"],0,"Input costs depend on this price."],
+["Which has pricing power on oil in the example?",["WTO","IMF","OPEC","SEBI"],2,"It adjusts output to maintain price levels."],
+["Barriers to entry include:",["Low capital","Easy licensing","No brand","Licensing, patents, capital, distribution and brand loyalty"],3,"They protect incumbents."],
+["Buffett's 'moat' refers to:",["High entry barriers","Low debt","Low tax","High liquidity"],0,"It protects a business's economics."],
+["An attractive industry has:",["High competition","Low competition, high entry barriers, weak suppliers and buyers, few substitutes","Many substitutes","Strong suppliers"],1,"It enjoys pricing power and high margins."],
+["Education is attractive because of:",["Low demand","Low margins","High entry barriers and weak buyer power","Many substitutes"],2,"Permissions are needed and quality institutions are few."],
+["PESTLE stands for:",["Price, Equity, Stock, Trade, Loan, Earnings","People, Entry, Supply, Tax, Law, Exit","Policy, Export, Sales, Tariff, Labour, Energy","Political, Economic, Socio-cultural, Technological, Legal, Environmental"],3,"It analyses external factors."],
+["STEEPLED extends PESTLE by adding:",["Ethics and Demographics","Equity and Debt","Exports and Duties","Energy and Debt"],0,"Some models use this extension."],
+["PESTLE primarily analyses:",["Financial ratios","External environmental factors","Internal costs","Tax returns"],1,"It is often used for setting up offshore units."],
+["The Vodafone retrospective tax case is a:",["Political factor","Economic factor","Legal factor","Technological factor"],2,"It was a discomfort to investors."],
+["Rising demand for day care and packaged food in metros reflects:",["Political","Legal","Technological","Socio-cultural factors"],3,"Nuclear families and working spouses drive it."],
+["The BCG matrix looks at business segments through:",["Market growth and cash generation","Debt and equity","Price and volume","Tax and profit"],0,"It is a portfolio analysis."],
+["Stars are segments with:",["Low growth, low share","Rapid market growth and large market share","Low growth, high share","Fast growth, low share"],1,"They generate increasing cash."],
+["Cash cows are segments with:",["High growth and low share","Fast growth","Low growth prospects but steady cash from established share","Zero share"],2,"Navneet and Colgate are examples."],
+["Question marks are segments with:",["Slow growth, high share","Slow growth, low share","High share, high growth","Fast-growing market but low market share"],3,"They may consume cash with uncertain outcomes."],
+["Dogs are segments with:",["Slow growth and intense competition, generating little cash","High growth","High share","Strong cash"],0,"They are unattractive."],
+["SCP analysis stands for:",["Sales, Cost, Profit","Structure, Conduct, Performance","Supply, Capital, Price","Strategy, Capital, Process"],1,"It extends Porter's model into financial performance."],
+["Performance analysis in SCP looks at:",["Number of players","Seasonality","RoE, RoIC, WACC and similar ratios","Brand"],2,"High return on capital creates wealth."],
+["Under 'conduct' in SCP, FMCG and pharma are:",["Seasonal","Commoditised","Cyclical","Round-the-year businesses"],3,"Umbrellas and raincoats are seasonal."],
+["KPIs for an industry:",["Vary from industry to industry","Are identical","Are fixed by SEBI","Are irrelevant"],0,"E.g., revenue per employee suits BPOs but not capital-intensive manufacturing."],
+["Key constraining factors are categorised as:",["Price, cost, profit","Demand-side, supply-side and regulatory constraints","Tax, cess, surcharge","Debt, equity, cash"],1,"KPIs should reflect them."],
+["Key KPIs for airlines include:",["Net interest margin","Same-store sales","Passenger km, price per passenger km and occupancy rate","ARPU"],2,"Capacity and utilisation matter."],
+["Key KPIs for banks and NBFCs include:",["TRP","Revenue per FTE","Same-store sales","Net interest margin, NPA ratio, CASA ratio, capital adequacy"],3,"CRR and SLR are also tracked."],
+["IT services/BPO KPIs include:",["FTEs billed, revenue per FTE, attrition, constant currency growth","TRP","ARPU","Store count"],0,"Pricing is based on headcount."],
+["Telecom analysts track:",["Same-store sales","ARPU, subscriber churn, acquisition cost and market share","Passenger km","NPA"],1,"The subscriber is the unit of pricing."],
+["Key retail metrics include:",["ARPU","NPA","Number of stores and same-store sales growth","TRP"],2,"Growth depends on store network expansion."],
+["Media industry metrics include:",["NIM","Same-store sales","ARPU","Viewership/TRP, ad realisation per unit and content acquisition cost"],3,"Most revenue is from advertising."],
+["Kerala's 2017 fat tax was an additional levy of ___ on junk food:",["14.5%","5%","28%","50%"],0,"It aimed to discourage the junk food industry."],
+["Direct taxes are those where:",["Incidence and liability are on different persons","Incidence and liability fall on the same person","Only consumers pay","Customs are paid"],1,"Income tax is the common form."],
+["GST is an example of:",["Direct tax","Wealth tax","Indirect tax where the consumer bears the cost","Property tax"],2,"The seller collects and remits it."],
+["Corporate income tax in India has components:",["VAT, excise, stamp","STT, GST, customs","Road tax and cess","Income tax, MAT, surcharge and cess"],3,"These four make up the corporate tax."],
+["Base corporate tax of 30% reduces to 25% if turnover is below:",["₹400 crore","₹10 crore","₹1 crore","₹1,000 crore"],0,"Alternative regimes of 15–25% also exist."],
+["MAT is payable when tax is less than ___ of book profits:",["5%","15%","25%","30%"],1,"MAT credit can offset future tax."],
+["Surcharge revenue goes:",["Shared with states","To local bodies","Entirely to the central government","To SEBI"],2,"Income tax is shared with states; surcharge is not."],
+["The total cess levied for AY 2025-26 is:",["1%","2%","6%","4% for health and education"],3,"Cess is charged on tax plus surcharge."],
+["Excise duty and VAT still apply on:",["Liquor, petrol and diesel","All goods","Gold","Services"],0,"Other goods moved to GST."],
+["GST allows sellers input tax credit to:",["Increase tax","Avoid double taxation","Avoid invoices","Evade tax"],1,"They remit only the balance."],
+["Customs duty is levied on:",["Exports only","Services","Imported products","Property"],2,"Rates vary by product."],
+["Security Transaction Tax:",["Encourages short-term trading","Is paid by companies only","Applies to property","Discourages short-term trading and affects stock brokers"],3,"It reduces realisable value of sales."],
+["Sources for industry analysis include:",["Rumours","Chat groups","MD&A of annual reports, trade body publications, industry journals and ministry sites","Only price charts"],2,"These provide industry insights."],
+["Which political factors would investors look at in a country?",["Stability in legislation and policy, minimal corruption, ease of doing business","Weather","Product colours","Sports results"],0,"Healthy public finances and consistent fiscal policy are also important."],
+["Under PESTLE, GDP growth, inflation, interest rates and exchange rate stability are:",["Political factors","Economic factors","Legal factors","Social factors"],1,"They define a country's attractiveness as an investment destination."],
+["The demographic profile in terms of age, education and lifestyle is classified as a:",["Legal factor","Political factor","Socio-cultural factor","Technological factor"],2,"It shapes what people buy and consume."],
+["Countries pushing R&D and having a tech-savvy population attract investors. This is a:",["Legal factor","Political factor","Economic factor","Technological factor"],3,"Technology drives business and society."],
+["Consistency of laws and no arbitrary changes give comfort to investors. This is a:",["Legal factor","Social factor","Economic factor","Technological factor"],0,"Transparency and enforcement of laws also matter."],
+["Policies on pollution control, waste disposal and mining are:",["Political factors","Environmental factors","Economic factors","Legal factors only"],1,"Unclear policies may lead to operational and legal issues."],
+["An important step after listing PESTLE factors is to:",["Ignore them","Apply them equally to all firms","Evaluate the impact and criticality of each factor for the business","Delete them"],2,"Not all factors affect all companies equally."],
+["A young population like India's offers different opportunities from an ageing one like:",["Brazil","Chile","Australia","Japan"],3,"The chapter uses this contrast."],
+["Industry constraints are broken into demand-side, supply-side and ____ constraints.",["Regulatory","Financial","Technical","Seasonal"],0,"KPIs should reflect these constraints."],
+["If an industry has a limited number of target customers, the key metric to follow is:",["Dividend payout","Industry penetration rate","Debt ratio","Capacity utilisation"],1,"Market size is the demand constraint."],
+["If an industry is constrained by capacity, the key metric is:",["Penetration rate","Dividend","Capacity utilisation rate","Attrition"],2,"Consumer durables can face this in high growth."],
+["The key metrics for consumer goods are volume growth and:",["Interest coverage","Margin of safety","Employee count","Average price and its growth"],3,"The unit of pricing is the quantity of goods sold."],
+["In IT services, pricing is typically based on:",["Headcount (FTE per month) assigned to a project","Store area","Cargo carried","Subscribers"],0,"Labour availability can be a constraint in high growth."],
+["In IT services, realisations are heavily impacted by:",["Monsoon","Foreign currency fluctuations","Road tax","Stamp duty"],1,"The sector is largely export oriented."],
+["Indian companies can claim ____ of actual spending on certain scientific research to promote R&D.",["0.5 times","1 time","1.5 times","3 times"],2,"This is a tax policy that favours R&D."],
+["To discourage delay in paying interest to scheduled banks, companies may deduct that interest as expense only if it is:",["Accrued","Booked","Capitalised","Paid"],3,"This causes differences in book and tax profits."],
+["A deferred tax asset arises when a company is:",["Paying more taxes today with future taxes expected to reduce","Paying less tax today","Paying no tax","Receiving dividends"],0,"It reduces future tax burden."],
+["A deferred tax liability arises when a company is paying:",["More tax today","Less tax today with future taxes higher","No dividends","Surcharge"],1,"It increases future tax burden."],
+["Road tax is paid by purchasers of new automobiles and is a:",["Annual levy","Monthly levy","Lifetime tax paid upfront","Cess"],2,"It raises acquisition cost and affects auto sales."],
+["Road tax affects auto-ancillaries and:",["Banks","Sugar firms","Textile firms","General insurance firms offering vehicle insurance"],3,"Vehicle sales drive downstream demand."],
+["Stamp duty changes mainly affect real estate and:",["Investment management and stock broking firms","Utilities","Telecom","Textiles"],0,"It is payable at registration of documents."],
+["Sources for industry analysis include trade bodies' publications and:",["Rumours","Relevant ministry websites and publications","Chat groups","Hearsay"],1,"MD&A of company annual reports is another source."],
+["In an industry where rivalry is high, the result will be ____ pricing power and ____ incomes.",["Lower; higher","Higher; higher","Lower; lower","Higher; lower"],2,"This is a sample question."],
+["Which of these is an economic factor under PESTLE?",["Forex reserves","RBI monetary policy","Dependence on other countries for natural resources","All of these"],3,"All three are listed in the chapter."],
+["SCP 'structure' includes industry growth rate, market size and:",["Relationship among players in the industry","Profit margin","Brand logo","Tax rate"],0,"All of these elements belong to structure."],
+];
+Q.forEach(q=>{if(q[1].some(o=>/^all of/i.test(o)))return;const c=q[1][q[2]];for(let i=q[1].length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[q[1][i],q[1][j]]=[q[1][j],q[1][i]];}q[2]=q[1].indexOf(c);});
+const $=i=>document.getElementById(i);let ans={},all=false;
+$("t").textContent=Q.length;
+function sc(){let r=0,w=0;for(const i in ans)ans[i]==Q[i][2]?r++:w++;return{r,w,s:r-.25*w}}
+function render(){$("l").innerHTML=Q.map((q,i)=>{const d=(i in ans)||all;
+return `<div class="q${d?" d":""}"><small>Q${i+1}</small><div class="qt">${q[0]}</div>`+q[1].map((o,j)=>`<button class="o${d?(j==q[2]?" ok":ans[i]===j?" no":""):""}" ${d?"disabled":""} onclick="ans[${i}]=${j};render()">${"ABCD"[j]}. ${o}</button>`).join("")+`<div class="ex"><b>Answer: ${"ABCD"[q[2]]}.</b> ${q[3]}</div></div>`}).join("");
+$("a").textContent=Object.keys(ans).length;$("c").textContent=sc().s.toFixed(2)}
+$("sa").onclick=()=>{all=!all;render()};
+$("rs").onclick=()=>{ans={};all=false;$("r").style.display="none";render();scrollTo(0,0)};
+$("f").onclick=()=>{const s=sc(),p=(s.s/Q.length*100).toFixed(1);$("r").style.display="block";$("r").innerHTML=`<b>Result:</b> Correct ${s.r} · Wrong ${s.w} · Unattempted ${Q.length-s.r-s.w}<br>Net score <b>${s.s.toFixed(2)}/${Q.length}</b> (${p}%) – ${p>=60?"✅ above 60%":"❌ below 60%"}`;scrollTo(0,0)};
+render();
+</script></body></html>

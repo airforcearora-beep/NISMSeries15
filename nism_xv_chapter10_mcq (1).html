@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NISM XV – Chapter 10 MCQs</title>
+<style>
+:root{--bg:#f6f7f9;--cd:#fff;--tx:#1d2330;--bd:#dde1e8;--ac:#2f5bd3;--ok:#0f7b45;--okb:#e3f5ea;--no:#b42318;--nob:#fdeaea}
+@media(prefers-color-scheme:dark){:root{--bg:#14171d;--cd:#1d222b;--tx:#e8ebf0;--bd:#323946;--ac:#7c9cf5;--ok:#59d68f;--okb:#12301f;--no:#ff8c82;--nob:#3a1816}}
+body{margin:0;font:16px/1.5 system-ui,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+.w{max-width:800px;margin:auto;padding:14px}header{position:sticky;top:0;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--bd)}
+h1{font-size:18px;margin:0 0 6px}.s{display:inline-block;background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:3px 10px;margin:2px;font-size:14px}
+button{font:inherit;font-size:14px;padding:5px 12px;border-radius:8px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);cursor:pointer}
+.q{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:12px 0}.qt{font-weight:600;margin-bottom:8px}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:8px 12px}.o.ok{background:var(--okb);border-color:var(--ok);color:var(--ok);font-weight:600}.o.no{background:var(--nob);border-color:var(--no);color:var(--no)}
+.ex{display:none;margin-top:8px;padding:8px 12px;border-left:4px solid var(--ok);background:var(--okb);border-radius:4px;font-size:14px}.q.d .ex{display:block}
+#r{display:none;border:2px solid var(--ac);border-radius:12px;padding:12px;margin:12px 0;background:var(--cd)}
+</style></head><body><div class="w">
+<header><h1>NISM-Series-XV · Chapter 10: Valuation Principles</h1>
+<span class="s">Answered <b id="a">0</b>/<b id="t"></b></span><span class="s">Score <b id="c">0</b></span>
+<button id="sa">Show all answers</button> <button id="f">Finish</button> <button id="rs">Restart</button></header>
+<p style="font-size:13px">Scoring as in the exam: +1 correct, −0.25 wrong. Click an option to reveal the answer and a one-line explanation.</p>
+<div id="r"></div><div id="l"></div></div>
+<script>
+const Q=[
+["'Price is what you pay and value is what you get' is a quote of:",["Warren Buffett","Seth Klarman","Peter Lynch","Keynes"],0,"Klarman said price is set by the most panicked seller; value is set by cash flows and assets."],
+["Price differs from value in that price is:",["Based on an analyst's model","Available from the market, while value is the valuer's estimate","Always equal to value","Unknowable"],1,"Value is an educated estimate at a point in time."],
+["Valuation is often considered:",["Purely science","Purely art","Both art and science","A legal formality"],2,"It needs knowledge, experience and judgement."],
+["Valuations are required for:",["Buying or selling a business","Mergers and acquisitions","Equity swap fairness and regulatory/tax needs","All of these"],3,"All are listed purposes."],
+["The ultimate purpose of valuation is to relate price to value to estimate if it is:",["Fairly priced, over-priced or under-priced","Listed","Taxed","Insured"],0,"Valuers often present multiple scenarios."],
+["Buffett said the only two sources of value in a business are:",["Sales and costs","Earnings and assets","Debt and equity","Brand and people"],1,"Cash flows and sale/liquidation of assets."],
+["A lender's primary consideration is the borrower's:",["Collateral","Brand","Ability to generate cash flows to meet obligations","Size"],2,"Collateral is only a fall-back."],
+["Assets may be worth ____ what they appear for in the balance sheet, but liabilities must be settled in full.",["More than","Equal to","Exactly","A lot less than"],3,"Liquidation values can be low."],
+["The three broad valuation approaches are:",["Cost based, cash flow based (intrinsic) and selling price based (relative)","Buy, sell, hold","P/E, P/B, P/S","Top-down, bottom-up, mixed"],0,"This is the classification in the chapter."],
+["Cost-based valuation suits:",["Retail investors","Strategic buyers who have a choice between buying and building","All investors","Day traders"],1,"Financial investors cannot build the company."],
+["Risk-neutral valuation adjusts:",["The discount rate","The tax rate","Cash flows by the probability of realisation, then discounts at the risk-free rate","Share count"],2,"Insurance companies are typically valued this way."],
+["Real-world valuation discounts the most likely cash flows at:",["Zero","The risk-free rate only","The coupon rate","Risk-free rate plus a suitable risk premium"],3,"The premium reflects uncertainty."],
+["Relative valuation values an asset based on:",["Prices of similar assets","Cost to create it","Liquidation value","Tax paid"],0,"Ratios such as P/E, P/B and EV/EBITDA are used."],
+["A 9% coupon, 10-year bond with face value ₹1,00,000 when market yield is 9% is worth:",["₹90,000","₹1,00,000","₹1,10,000","₹9,000"],1,"Coupon equals discount rate, so value equals face value."],
+["If investors' expected return is higher than 9%, the bond's value is:",["Higher than ₹1,00,000","Equal to ₹1,00,000","Less than ₹1,00,000","Zero"],2,"Bond value and yield are inversely related."],
+["DCF is most appropriate when we know with certainty the cash flow stream, timing and:",["Brand","Share count","Competitors","Discount rate"],3,"In practice these are estimates, so DCF has error."],
+["Free cash flow is the:",["Inflows over outflows of the business","Net profit","Dividends","Sales"],0,"Present values of FCFs give the business value."],
+["The Dividend Discount Model suits:",["Loss-making firms","Mature companies in defensive industries paying regular, substantial dividends","Start-ups","Non-dividend growth firms"],1,"DDM depends on dividend assumptions."],
+["In the Gordon growth model, price P =",["D1 × (k − g)","k ÷ D1","D1 ÷ (k − g)","D0 × g"],2,"It requires g < k."],
+["D1 = ₹5, k = 12%, g = 7%. Gordon price is:",["₹42","₹71","₹60","₹100"],3,"5 ÷ (0.12 − 0.07) = ₹100."],
+["The Gordon model assumes growth rate is ____ the cost of equity:",["Lower than","Higher than","Equal to","Unrelated to"],0,"Otherwise the formula breaks down."],
+["FCFE is used when a company:",["Pays large dividends","Does not pay substantial dividends","Is a bank","Is in decline only"],1,"Alphabet is the example of a non-dividend payer."],
+["FCFE =",["EBIT − tax","Sales − costs","Operating cash flow − capex − interest ± net borrowings","Net profit + depreciation only"],2,"It is cash available to equity holders."],
+["FCFE models are most useful for companies in:",["Decline phase","Maturity","Dormancy","High growth phase, usually valued in two stages"],3,"Growth cannot be constant at high rates forever."],
+["Two-stage valuation adds the PV of high-growth cash flows to the:",["Discounted terminal value","Book value","Face value","Dividend yield"],0,"The terminal value must also be discounted to the present."],
+["FCFF is preferred when:",["A firm has an objective debt policy","Borrowings/repayments cannot be objectively estimated","The firm pays dividends","The firm has no debt"],1,"FCFE needs net borrowing estimates."],
+["The indirect method gives FCFF =",["Net profit + dividends","EBIT + interest","EBIT × (1 − tax) + depreciation − increase in non-cash working capital − capex","Sales − EBITDA"],2,"Non-cash charges are added back."],
+["The discount rate for FCFF is:",["Cost of equity","Cost of debt","Risk-free rate","WACC"],3,"FCFF belongs to all capital providers."],
+["The discount rate for FCFE is:",["Cost of equity","WACC","Cost of debt","Dividend yield"],0,"It is the cash flow to equity holders."],
+["Equity value from firm value = firm value less minority interest, preferred capital and:",["Cash","Interest-bearing debt","Reserves","Depreciation"],1,"Surplus cash is added back."],
+["Terminal growth rate is generally capped at:",["The company's past growth","The risk-free rate","Long-term nominal GDP growth of the markets it operates in","Zero"],2,"No business can outgrow the economy forever."],
+["Terminal value can alternatively be derived by applying ____ multiple to final-year EBITDA:",["P/B","Dividend yield","P/S","EV/EBITDA of comparable firms"],3,"This is the exit-multiple method."],
+["CAPM cost of equity:",["Ke = Rf + β × (Rm − Rf)","Ke = Rf × β","Ke = Rm ÷ β","Ke = Rf − β"],0,"Rm − Rf is the market risk premium."],
+["Rf = 7%, β = 1.2, Rm = 12%. Ke is:",["12%","13%","14.4%","19%"],1,"7 + 1.2 × 5 = 13%."],
+["WACC =",["Ke + Kd","Ke × We only","Ke × We + Kd × (1 − Tax) × Wd","Kd × Wd"],2,"Debt cost is tax-adjusted."],
+["Beta in CAPM measures:",["Total risk","Dividend risk","Credit risk","Sensitivity of the stock's return to the market's return"],3,"It is a proxy for systematic risk."],
+["Cost of debt in valuations is typically taken as:",["Prevailing interest rates for comparable credit quality","Zero","Dividend yield","Coupon only"],0,"Cost of equity comes from CAPM."],
+["Relative valuation indicates whether a stock is:",["Hedged","Cheap or expensive rather than absolute value","Listed","Insured"],1,"It compares what we pay with what we get."],
+["Dividend yield =",["Price ÷ DPS","EPS ÷ price","DPS ÷ current price","DPS × price"],2,"Price/dividend is its reciprocal."],
+["At price ₹50 and dividend ₹5, dividend yield is:",["2.5%","5%","20%","10%"],3,"5 ÷ 50 = 10%; price/dividend = 10x."],
+["At ₹200 with dividend ₹5, price-to-dividend ratio is:",["40x","20x","10x","2.5x"],0,"200 ÷ 5 = 40 (yield 2.5%)."],
+["A bond with 10% coupon and a 30% tax rate gives a post-tax return of:",["10%","7%","3%","30%"],1,"10 × (1 − 0.30) = 7%."],
+["Equity yields are generally higher than bond yields when markets are:",["Booming","Flat","Down","Closed"],2,"Equity is then available cheaply."],
+["A high dividend payout may also indicate:",["Strong growth","Cash shortage","Low profits","Limited avenues for expansion, limiting capital appreciation"],3,"Hence companion variables are used."],
+["Earnings yield =",["EPS ÷ current price","Price ÷ EPS","DPS ÷ price","EPS × price"],0,"P/E is its reciprocal."],
+["Price ₹195, EPS ₹13. Earnings yield is:",["15%","6.67%","0.067%","13%"],1,"13 ÷ 195 = 6.67% (P/E = 15x)."],
+["A higher P/E than peers usually implies a stock is:",["Cheaper","Undervalued always","Expensive, all else being equal","Illiquid"],2,"Higher growth or lower risk may justify a premium."],
+["Stocks with higher growth potential or lower risk should trade at a ____ to peers:",["Discount","No difference","Fixed price","Premium"],3,"The reverse applies for lower growth or higher risk."],
+["PEG ratio = (P/E) ÷:",["Growth rate","Dividend yield","ROE","Debt"],0,"It adjusts P/E for growth."],
+["The PEG ratio was coined by:",["Buffett","Peter Lynch","Graham","Munger"],1,"A PEG below 1 may suggest undervaluation."],
+["A Ltd. at ₹120, EPS ₹10, growth 10%. PEG is:",["0.93x","1.0x","1.2x","12x"],2,"12 ÷ 10 = 1.2x."],
+["B Ltd. at ₹140, EPS ₹10, growth 15%. PEG is:",["1.4x","0.7x","1.2x","0.93x"],3,"14 ÷ 15 = 0.93x, making B better."],
+["Enterprise value ratios are preferred by acquirers because they are:",["Neutral to capital structure","Dependent on debt","Based on dividends","Based on book value"],0,"A controlling shareholder can alter capital structure."],
+["In capital-intensive industries, which ratio is preferable?",["EV/EBIT","EV/EBITDA","P/E","P/S"],1,"Depreciation methods differ across such firms."],
+["For other industries, which EV multiple is preferable?",["EV/EBITDA","EV/Sales","EV/EBIT","P/B"],2,"Depreciation is a real cost there."],
+["P/E, EV/EBITDA and EV/EBIT cannot be used when the profit measure is:",["Positive","Stable","Large","Negative"],3,"EV/Sales is then used."],
+["EV/Sales is suitable only for companies likely to:",["Turn profitable and sustain it","Remain loss-making","Delist","Be liquidated"],0,"Otherwise going-concern is doubtful."],
+["A loss-making firm with no turnaround prospect must be valued at:",["Book value","Liquidation value","P/E","Face value"],1,"Its going-concern nature is doubtful."],
+["Price/Book ratio =",["Price ÷ EPS","EPS ÷ BV","Price per share ÷ book value per share","Sales ÷ BV"],2,"It equals market cap ÷ equity."],
+["P/B is preferred for valuing:",["Software firms","Capital-intensive firms","Service firms","Financial sector companies"],3,"Their assets are mostly monetary and close to fair value."],
+["AFB Finance: equity ₹9,900 lakh, 50 lakh shares, price ₹200. P/B is about:",["1.01","1.09","2.0","0.5"],0,"BVPS = 198; 200 ÷ 198 = 1.01."],
+["LKH Finance: equity ₹8,000 lakh, 50 lakh shares, price ₹175. P/B is about:",["1.01","1.09","2.19","0.5"],1,"BVPS = 160; 175 ÷ 160 = 1.09."],
+["Companies with higher ROE should command a ____ P/B:",["Discount","Same","Premium","Zero"],2,"Equity is employed more efficiently."],
+["When comparing to industry averages, analysts should check:",["Only mean","Only median","Only maximum","Both mean and median due to outliers"],3,"Outliers can pull up the mean in fragmented industries."],
+["EV = value of equity + value of debt −",["Cash and cash equivalents","Reserves","Share capital","Provisions"],0,"EV reflects the operating business value."],
+["Net worth ₹1,00,000, debt ₹1,00,000, market cap ₹5,00,000, no cash. EV/Capital Employed is:",["2","3","5","6"],1,"EV = 6,00,000; capital employed = 2,00,000."],
+["With ROCE of 45% and EV/CE of 3, the return on EV is:",["45%","30%","15%","3%"],2,"45% ÷ 3 = 15%."],
+["For a 20% return requirement with ROCE 45%, maximum EV/CE is:",["3.0","2.0","1.5","2.25"],3,"45 ÷ 20 = 2.25 → EV ₹4,50,000."],
+["Net Asset Value approach uses:",["Market value of assets less liabilities","Book value","Sales","Earnings"],0,"It differs from book net worth."],
+["NAV approach is used in asset-heavy businesses like:",["Software and FMCG","Real estate, shipping and aviation","Banking","Retail"],1,"These are extremely asset oriented."],
+["Price/Embedded value is used for:",["Banks","Retail","Life insurers","Steel firms"],2,"Embedded value is PV of probability-adjusted future cash flows from in-force policies."],
+["Price/Adjusted book value can be applied to value:",["Airlines","Telecom","FMCG","NBFCs"],3,"ABV factors in off-balance sheet items."],
+["EV/Capacity is useful for:",["Idle plants or start-ups where financials do not reflect potential","Large banks","Insurers","Utilities"],0,"It uses operating metrics."],
+["Trading multiples come from:",["Recent acquisitions","The stock market","Court orders","Tax data"],1,"Transaction multiples come from recent deals."],
+["Which is generally considered more relevant/authentic?",["Trading multiples","Dividend yield","Transaction multiples","Earnings yield"],2,"They show actual willingness to pay for control."],
+["Sum-of-the-parts valuation is best for:",["Single-product firms","Start-ups","Banks","Conglomerates like ITC and L&T with multiple businesses"],3,"Each business is valued separately and summed."],
+["New-age businesses use metrics like eyeballs, footfalls and ARPU, but Buffett would say they must ultimately translate into:",["Profits for owners","Users","Page views","Valuations"],0,"Valuations can collapse, as in the dot-com crash of 2000–01."],
+["Valuation is:",["Fully objective","Subjective since inputs lack generally accepted standards","Timeless","Precise"],1,"Complex models only give a false impression of preciseness."],
+["If earning power is low, book value becomes:",["Irrelevant","Less important","Very important","Zero"],2,"If earning power is high, BV is less important."],
+["For a private owner, the true value of a firm is:",["Market cap","Book value","Face value","Enterprise value"],3,"EV includes debt."],
+["P/E for a leveraged firm may be:",["Deceptive; check debt levels","Reliable","Always low","Irrelevant"],0,"Leverage distorts earnings."],
+["Analysts should focus on ROE rather than EPS because EPS:",["Is unaudited","Does not account for retained earnings","Is always negative","Is fixed"],1,"ROE reflects returns on equity employed."],
+["Large differences between ROE and ROCE should:",["Be ignored","Be welcomed","Trigger investigation","Be capitalised"],2,"ROCE reflects true return; ROE may be manipulated by leverage."],
+["Company A: EPS ₹19.5, PE 15.4 and about 141.7 lakh shares. Market cap is about:",["₹3,046 lakh","₹30,000 lakh","₹4,260 lakh","₹42,600 lakh"],3,"≈ ₹300 × 141.7 lakh ≈ ₹42,600 lakh."],
+["Peer PE is 16x; company deserves a 20% premium; EPS ₹32.2. Fair price ≈",["₹617.8","₹514.8","₹428.7","₹643.6"],0,"16 × 1.2 = 19.2; 19.2 × 32.2 ≈ ₹618."],
+["Fair EV/EBITDA 8.5x; EBITDA ₹4,754.6; debt ₹1,640.5; cash ₹169. Equity value ≈",["₹40,415 lakh","₹38,943 lakh","₹41,886 lakh","₹42,224 lakh"],1,"EV 40,414 − debt 1,640.5 + cash 169 ≈ ₹38,943 lakh."],
+["If interest rates in the economy rise, the price of an existing bond would:",["Fall","Rise","Stay the same","Double"],0,"Bond prices and market yields move in opposite directions."],
+["Company B's P/E (18.2) is higher than Company A's (15.4). A plausible justification is that B has:",["Higher EPS growth, which justifies a higher P/E","A smaller size, hence a smaller base","High leverage","Lower earnings"],0,"Growth supports a higher multiple."],
+["Company A's EPS grows from ₹17.0 to ₹19.5. Its EPS growth rate is about:",["10.0%","14.7%","19.5%","17.0%"],1,"19.5 ÷ 17.0 − 1 = 14.7%."],
+["Company B's EPS grows from ₹26.8 to ₹32.2. Its EPS growth rate is about:",["15%","18%","20%","25%"],2,"32.2 ÷ 26.8 − 1 = 20.1%."],
+["Using 2XX9 growth, Company A's PEG is about:",["0.91x","2.91x","1.07x","1.05x"],3,"15.4 ÷ 14.7 = 1.05x."],
+["Using 2XX9 growth, Company B's PEG is about:",["0.91x","1.05x","2.91x","1.07x"],0,"18.2 ÷ 20.1 = 0.91x."],
+["Based on PEG, which company appears cheaper?",["Company A","Company B, as it has the lower PEG","Both equal","Neither"],1,"A lower PEG means a cheaper stock relative to growth."],
+["Company A's price per share is about (P/E 15.4 × EPS ₹19.5):",["₹195","₹250","₹300","₹350"],2,"15.4 × 19.5 = ₹300.3."],
+["Company B's price per share is about (P/E 18.2 × EPS ₹32.2):",["₹420","₹500","₹720","₹586"],3,"18.2 × 32.2 = ₹586."],
+["Company B's market cap is ₹36,000 lakh, debt ₹1,626.8 lakh and cash ₹57 lakh. EV is about:",["₹37,570 lakh","₹36,000 lakh","₹35,430 lakh","₹38,684 lakh"],0,"36,000 + 1,626.8 − 57 = ₹37,569.8 lakh."],
+["With EV of about ₹37,570 lakh and EBITDA of ₹3,938.8 lakh, Company B's EV/EBITDA is about:",["8.17x","9.54x","8.74x","9.14x"],1,"37,570 ÷ 3,938.8 = 9.54x."],
+["Company A's market cap is about ₹42,550 lakh, debt ₹1,640.5 and cash ₹169. EV is about:",["₹42,550 lakh","₹40,414 lakh","₹44,020 lakh","₹46,000 lakh"],2,"42,550 + 1,640.5 − 169 = ₹44,021 lakh."],
+["Company A's EV/EBITDA at market value (EBITDA ₹4,754.6 lakh) is about:",["8.5x","7.9x","10.2x","9.3x"],3,"44,021 ÷ 4,754.6 = 9.26x."],
+["Company A's net debt is (debt minus cash):",["₹1,471.5 lakh","₹1,809.5 lakh","₹1,640.5 lakh","₹169 lakh"],0,"1,640.5 − 169 = ₹1,471.5 lakh."],
+["Company A's earnings yield at P/E of 15.4 is about:",["5.5%","6.5%","7.5%","15.4%"],1,"1 ÷ 15.4 = 6.5%."],
+["Company B's earnings yield at P/E of 18.2 is about:",["18.2%","6.5%","5.5%","4.0%"],2,"1 ÷ 18.2 = 5.5%."],
+["Company A's estimated net profit growth in 2XX9 is about:",["10%","12%","14%","16.3%"],3,"2,763.1 ÷ 2,376.5 − 1 = 16.3%."],
+["Company A's estimated 2XX9 EBITDA margin is about:",["52.2%","44.4%","30.4%","60%"],0,"4,754.6 ÷ 9,100 = 52.2%."],
+["Company A's P/B at market cap of about ₹42,550 lakh and equity ₹3,046.6 lakh is about:",["1.4x","14.0x","4.0x","2.0x"],1,"42,550 ÷ 3,046.6 = 14.0x."],
+["A high P/E together with low expected growth suggests the stock is:",["Cheap","Neutral","Expensive relative to its growth","Debt-free"],2,"PEG would be high."],
+["A very high dividend payout can also signal:",["Rapid growth","Low debt","High leverage","Limited avenues for reinvestment and slower growth"],3,"Companion variables help interpret dividend yield."],
+["When equity yields are higher than bond yields, equities are usually:",["Cheaper relative to bonds","Costlier","Riskless","Illiquid"],0,"It occurs when markets are down."],
+["Net debt in the EV formula is used because surplus cash can:",["Increase taxes","Offset debt, reducing the effective cost to an acquirer","Raise equity","Cut sales"],1,"Cash is deducted when computing enterprise value."],
+];
+Q.forEach(q=>{if(q[1].some(o=>/^all of/i.test(o)))return;const c=q[1][q[2]];for(let i=q[1].length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[q[1][i],q[1][j]]=[q[1][j],q[1][i]];}q[2]=q[1].indexOf(c);});
+const $=i=>document.getElementById(i);let ans={},all=false;
+$("t").textContent=Q.length;
+function sc(){let r=0,w=0;for(const i in ans)ans[i]==Q[i][2]?r++:w++;return{r,w,s:r-.25*w}}
+function render(){$("l").innerHTML=Q.map((q,i)=>{const d=(i in ans)||all;
+return `<div class="q${d?" d":""}"><small>Q${i+1}</small><div class="qt">${q[0]}</div>`+q[1].map((o,j)=>`<button class="o${d?(j==q[2]?" ok":ans[i]===j?" no":""):""}" ${d?"disabled":""} onclick="ans[${i}]=${j};render()">${"ABCD"[j]}. ${o}</button>`).join("")+`<div class="ex"><b>Answer: ${"ABCD"[q[2]]}.</b> ${q[3]}</div></div>`}).join("");
+$("a").textContent=Object.keys(ans).length;$("c").textContent=sc().s.toFixed(2)}
+$("sa").onclick=()=>{all=!all;render()};
+$("rs").onclick=()=>{ans={};all=false;$("r").style.display="none";render();scrollTo(0,0)};
+$("f").onclick=()=>{const s=sc(),p=(s.s/Q.length*100).toFixed(1);$("r").style.display="block";$("r").innerHTML=`<b>Result:</b> Correct ${s.r} · Wrong ${s.w} · Unattempted ${Q.length-s.r-s.w}<br>Net score <b>${s.s.toFixed(2)}/${Q.length}</b> (${p}%) – ${p>=60?"✅ above 60%":"❌ below 60%"}`;scrollTo(0,0)};
+render();
+</script></body></html>

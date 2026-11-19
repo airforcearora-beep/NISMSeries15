@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NISM XV – Chapter 15 MCQs</title>
+<style>
+:root{--bg:#f6f7f9;--cd:#fff;--tx:#1d2330;--bd:#dde1e8;--ac:#2f5bd3;--ok:#0f7b45;--okb:#e3f5ea;--no:#b42318;--nob:#fdeaea}
+@media(prefers-color-scheme:dark){:root{--bg:#14171d;--cd:#1d222b;--tx:#e8ebf0;--bd:#323946;--ac:#7c9cf5;--ok:#59d68f;--okb:#12301f;--no:#ff8c82;--nob:#3a1816}}
+body{margin:0;font:16px/1.5 system-ui,Arial,sans-serif;background:var(--bg);color:var(--tx)}
+.w{max-width:800px;margin:auto;padding:14px}header{position:sticky;top:0;background:var(--bg);padding:8px 0;border-bottom:1px solid var(--bd)}
+h1{font-size:18px;margin:0 0 6px}.s{display:inline-block;background:var(--cd);border:1px solid var(--bd);border-radius:8px;padding:3px 10px;margin:2px;font-size:14px}
+button{font:inherit;font-size:14px;padding:5px 12px;border-radius:8px;border:1px solid var(--bd);background:var(--cd);color:var(--tx);cursor:pointer}
+.q{background:var(--cd);border:1px solid var(--bd);border-radius:12px;padding:14px;margin:12px 0}.qt{font-weight:600;margin-bottom:8px}
+.o{display:block;width:100%;text-align:left;margin:6px 0;padding:8px 12px}.o.ok{background:var(--okb);border-color:var(--ok);color:var(--ok);font-weight:600}.o.no{background:var(--nob);border-color:var(--no);color:var(--no)}
+.ex{display:none;margin-top:8px;padding:8px 12px;border-left:4px solid var(--ok);background:var(--okb);border-radius:4px;font-size:14px}.q.d .ex{display:block}
+#r{display:none;border:2px solid var(--ac);border-radius:12px;padding:12px;margin:12px 0;background:var(--cd)}
+</style></head><body><div class="w">
+<header><h1>NISM-Series-XV · Chapter 15: Technical Analysis</h1>
+<span class="s">Answered <b id="a">0</b>/<b id="t"></b></span><span class="s">Score <b id="c">0</b></span>
+<button id="sa">Show all answers</button> <button id="f">Finish</button> <button id="rs">Restart</button></header>
+<p style="font-size:13px">Scoring as in the exam: +1 correct, −0.25 wrong. Click an option to reveal the answer and a one-line explanation.</p>
+<div id="r"></div><div id="l"></div></div>
+<script>
+const Q=[
+["Technical analysis evaluates securities by analysing statistical trends from:",["Trading activity, mainly price and volume","Financial statements","Economic reports","Industry publications"],0,"Unlike fundamental analysis, it ignores financial health."],
+["The first core assumption of technical analysis is that:",["Price is random","Price discounts everything","Volume is irrelevant","Fundamentals decide price"],1,"All known and unknown information is already reflected in the price."],
+["'Price moves in trends' implies that once a trend is established it is more likely to:",["Reverse","Vanish","Continue than reverse","Be random"],2,"Trends can be up, down or sideways."],
+["'History repeats itself' is based on:",["Company results","Government policy","Weather","Human psychology that drives cyclical behaviour"],3,"Patterns tend to recur under similar conditions."],
+["Technical analysis is about managing risk, not:",["Guaranteeing outcomes","Using charts","Tracking volume","Studying trends"],0,"Indicators offer probabilistic insights."],
+["High volume during breakouts or reversals:",["Reduces credibility","Adds credibility to the move","Is irrelevant","Signals fraud"],1,"Volume confirms price."],
+["Technical analysis is mainly used for ____ horizon strategies.",["Long-term","Very long-term","Short to medium term","Retirement"],2,"Fundamental analysis is for long-term investing."],
+["Technical analysis is typically followed by:",["Value investors only","Long-term investors","Portfolio managers","Traders, chartists and short-term investors"],3,"Fund managers and value investors use fundamentals."],
+["A line chart uses:",["Closing prices over time","Open prices only","High prices only","Volumes only"],0,"It suits quick trend visualisation."],
+["A line chart does NOT show:",["Closing price","Intraday open, high and low","Time","Trend"],1,"It captures only the close."],
+["An OHLC bar chart shows:",["Only the close","Volume only","Open, high, low and close","Only the range"],2,"It highlights the price range and volatility."],
+["Candlestick charts are best for identifying patterns like:",["P/E","Dividends","Debt ratio","Doji, hammer and engulfing"],3,"They show market psychology."],
+["A Point and Figure chart ignores:",["Time and volume","Price","Support","Resistance"],0,"It focuses only on price movement."],
+["A Renko chart uses:",["Time intervals","Fixed price movement bricks","Volume bars","Closing lines"],1,"It smoothens minor fluctuations."],
+["Heikin-Ashi charts:",["Show raw prices","Show only volume","Average price data to reduce noise","Ignore price"],2,"They help trend-following strategies."],
+["Dow Theory was developed by Charles Dow through editorials between:",["1800 and 1810","1950 and 1960","1990 and 2000","1900 and 1902"],3,"Hamilton and Rhea later organised it."],
+["Dow Theory has how many tenets?",["Four","Six","Eight","Ten"],1,"The six tenets are listed in the chapter."],
+["Dow Theory says the market has ____ trends.",["One","Two","Three","Four"],2,"Primary, secondary and tertiary."],
+["The primary trend is a long-term movement typically lasting:",["Days","Weeks","Months","One year or more"],3,"It is the bull or bear market."],
+["The secondary trend is a correction or rally within the primary trend lasting:",["Weeks to months","Days","Hours","Years"],0,"It is the intermediate trend."],
+["The tertiary trend lasts:",["Years","A few days to weeks","A decade","Months"],1,"It reflects short-term fluctuations."],
+["The three phases of a primary trend are:",["Entry, middle, exit","Buy, hold, sell","Accumulation, public participation and distribution","Rise, fall, flat"],2,"This mirrors Wyckoff's cycle."],
+["In the accumulation phase:",["Retail exits","Public joins","Prices crash","Smart money enters quietly"],3,"The public joins later."],
+["In the distribution phase:",["Smart money exits while retail investors often enter late","Smart money buys","Volume is zero","Trend reverses upward"],0,"This is the last phase of the primary trend."],
+["'Indices must confirm each other' means a trend is valid only when:",["One index moves","Major indices such as Nifty and Sensex move in the same direction","Prices fall","Volume is flat"],1,"It is used in intermarket analysis."],
+["Volume should increase in the direction of the:",["Tertiary trend","Secondary trend","Primary trend","Sideways trend"],2,"This confirms the trend."],
+["Dow Theory says a trend persists until:",["Volume rises","Time passes","Prices double","A definite reversal signal appears"],3,"This underpins trend-following strategies."],
+["A bull market is characterised by:",["Confidence and expansion","Fear","Contraction","Neutrality"],0,"Sustained upward movement in prices."],
+["A bear market reflects:",["Confidence","Fear and contraction","Neutrality","Expansion"],1,"It is a prolonged decline."],
+["Higher highs and higher lows indicate:",["Bearishness","Sideways","Nothing","Bullishness"],3,"Lower highs and lower lows indicate bearishness."],
+["A secondary trend in a bull market is a:",["Correction (often 10–20%)","Rally","Breakout","Gap"],0,"It is a temporary decline before the uptrend resumes."],
+["A secondary trend in a bear market is a:",["Correction","Rally or bounce","Trend change","Gap"],1,"Also called a relief rally."],
+["As per Dow Theory, secondary retracement ranges from:",["10% to 20%","One-fifth to one-half","One-third to two-thirds of the previous primary move","All of it"],2,"This is the typical range."],
+["During secondary trends volumes are typically:",["Higher than primary","Zero","Rising sharply","Lower than the primary trend"],3,"This indicates a lack of conviction."],
+["Fibonacci retracement levels used for reversal zones are:",["38.2%, 50% and 61.8%","10%, 20%, 30%","25%, 75%, 100%","5%, 15%, 25%"],0,"They identify likely reversal zones."],
+["Tertiary trends typically last less than:",["One week","Three weeks","Six months","One year"],1,"Some definitions extend to six weeks."],
+["Tertiary trend risks include:",["Stable signals","Long-term clarity","Low volatility","Whipsaws, false breakouts and overtrading"],3,"They reverse frequently and quickly."],
+["A hanging man is a ____ reversal candlestick after an up move.",["Bearish","Bullish","Neutral","Continuation"],0,"It needs confirmation."],
+["A hanging man has a small real body and a long lower shadow at least:",["Equal to the body","Twice the size of the real body","Ten times the body","Half the body"],1,"With little or no upper shadow."],
+["A hanging man is valid as a reversal only if the next candle:",["Closes higher","Is flat","Closes lower","Gaps up"],2,"Traders act after the confirmation candle."],
+["A hammer occurs after a:",["Rise","Sideways move","Gap up","Price decline"],3,"It shows buyers absorbing selling."],
+["A bullish engulfing pattern is a small red candle followed by:",["A large green candle engulfing its body","A small green candle","A doji","Another red candle"],0,"It signals a reversal."],
+["A bullish engulfing pattern is more likely to signal a reversal when preceded by:",["Two green candles","Four or more red candles","A gap up","Nothing"],1,"The preceding candles matter."],
+["A bearish engulfing pattern has a red candle that engulfs the previous:",["Red candle","Doji","Green candle","Gap"],2,"It is more significant after a price advance."],
+["Dark cloud cover occurs in an uptrend when a bullish candle is followed by:",["A gap up that turns into a bearish candle closing below its midpoint","A doji","A green candle","A gap down only"],0,"It forms near the top of a congestion area."],
+["A piercing pattern occurs near the ____ of the congestion area.",["Top","Bottom","Middle","Gap"],1,"The green candle covers at least half of the previous red candle."],
+["A morning star consists of ____ candlesticks and is bullish.",["Two","Four","Three","Five"],2,"Tall red, small body, tall green."],
+["An evening star is a ____ candlestick pattern of three candles.",["Neutral","Continuation","Bullish","Bearish"],3,"Large green, small body, long red."],
+["A symmetrical triangle represents:",["Consolidation before a breakout or breakdown","A reversal","A gap","A trend end"],0,"Breakout from the upper line is bullish."],
+["An ascending triangle shows higher lows and a flat resistance; it is a:",["Bearish reversal","Bullish continuation pattern","Neutral signal","Gap pattern"],1,"Buying pressure strengthens."],
+["The profit target for a triangle is calculated by adding or subtracting the triangle's ____ to the breakout point.",["Base","Width","Height at its thickest point","Volume"],2,"Add for upside; subtract for downside."],
+["A descending triangle forms with lower highs and:",["Rising lows","Equal highs","A gap","The same level lows"],3,"It is normally a bearish continuation pattern."],
+["Flags and pennants are:",["Reversal patterns","Continuation patterns","Gaps","Indicators"],1,"They follow a sharp move."],
+["The sharp price move preceding a flag or pennant is called the:",["Flagbase","Pole base","Flagpole","Trendline"],2,"The sideways period follows."],
+["Support is a price level where demand is expected to:",["Disappear","Rise forever","Be zero","Pause a downtrend through concentrated demand"],3,"It acts like a floor."],
+["Resistance is a price level where supply is concentrated and an uptrend is expected to:",["Pause","Accelerate","Start","Gap"],0,"It acts like a ceiling."],
+["Role reversal means broken support often becomes:",["Support again","Resistance","A gap","A trend"],1,"And broken resistance becomes support."],
+["In a false breakout the price:",["Moves decisively with volume","Stays above","Temporarily breaches a level but quickly reverses","Gaps"],2,"It traps traders."],
+["Strength of a support or resistance level increases with more:",["Touches","Gaps","Candles of one colour","Days off"],0,"Volume, time spent and recency also matter."],
+["Pivot points are generally used in:",["Long-term investing","Intraday trading","Valuation","Auditing"],1,"They use previous period's high, low and close."],
+["Support and resistance levels are best considered:",["Exact prices","Fixed numbers","Zones, not exact prices","Irrelevant"],2,"There is subjectivity involved."],
+["VWAP is a dynamic support or resistance level often used by:",["Intraday traders","Long-term investors","Auditors","Bankers"],0,"Anchored VWAP ties to an event."],
+["A trendline requires a minimum of ____ points, but three or more increase reliability.",["One","Two","Three","Five"],1,"It extends into the future."],
+["A channel is formed by:",["One trendline","Two crossing lines","Two parallel trendlines","A circle"],2,"One connects highs, another lows."],
+["An ascending channel has:",["Higher highs and higher lows","Lower highs","Equal highs","No trend"],0,"It indicates bullishness."],
+["Moving averages are:",["Leading indicators","Lagging indicators","Predictive","Random"],1,"They help identify major trends."],
+["A combination of 13, 21 and 34 EMAs is based on the:",["Fibonacci series","Arithmetic series","Prime numbers","Calendar"],0,"It gives early signals of momentum shift."],
+["In an uptrend with the 13-21-34 EMA combination:",["Price < 13 EMA","Price > 13 EMA > 21 EMA > 34 EMA","13 < 21 < 34","All equal"],1,"In a bull market, price usually finds support near the 34 EMA."],
+["The default MACD line is the difference between the:",["26 EMA and 12 EMA","12 EMA and 9 EMA","26 EMA and 9 EMA","50 DMA and 200 DMA"],0,"The slow line is the 9 EMA of the MACD line."],
+["The MACD slow (signal) line is generated from the:",["26 EMA","9 EMA of the fast MACD line","12 EMA","50 DMA"],1,"Crossovers generate signals."],
+["Price makes a higher high but MACD makes a lower high. This indicates:",["Strong momentum","A breakout","Loss of upward momentum","A gap"],2,"It is a negative divergence."],
+["Price makes a new low but MACD a higher low. The stock is likely to:",["Fall more","Stay flat","Gap down","Bottom out"],3,"Downward momentum is fading."],
+["Crossovers over the MACD zero baseline:",["Should not be used for trading","Are always strong","Are buy signals","Are sell signals"],0,"The zero line separates confirmed bull and bear markets."],
+["The RSI is scaled from:",["0 to 50","0 to 200","0 to 100","−100 to 100"],2,"It measures speed and magnitude of price changes."],
+["RSI above ____ suggests overbought; below ____ suggests oversold.",["80; 20","70; 30","60; 40","90; 10"],1,"These are the usual thresholds."],
+["In a bull market, RSI rarely falls below about:",["44–45","10","20","30"],0,"In a bear market, RSI rarely rises above 50–55."],
+["A price new low with an RSI higher low is a:",["Bearish divergence","Bullish divergence","Neutral","No signal"],1,"It is an early buy signal."],
+["A price new high with a lower RSI high is a:",["Bullish divergence","Confirmation","Bearish divergence","Neutral"],2,"It is an early sell signal."],
+["RSI performs best in a market that is in a:",["Strong uptrend","Strong downtrend","Gap","Trading range"],3,"It can remain overbought in strong trends."],
+["ADX measures:",["Trend strength, not direction","Direction","Volume","Volatility only"],0,"It is plotted on a 0 to 100 scale."],
+["An ADX reading below ____ is generally a weak or no trend.",["10","25","50","75"],1,"A rising ADX crossing 25 indicates a strong trend."],
+["A buy signal in DMI occurs when +DMI crosses over −DMI and:",["ADX is falling","ADX is flat","ADX is rising","Volume falls"],2,"Avoid crossovers when ADX is weak."],
+["RSC (Relative Strength Comparative) above 100 indicates the stock is:",["Underperforming the benchmark","Outperforming the benchmark","Delisted","Neutral"],1,"Below 100 means underperforming."],
+["The RSC compares a security's performance to a:",["Dividend","Benchmark such as Nifty 50 or sector peers","Gold price","Interest rate"],1,"It uses a ratio chart."],
+["OBV adds the day's volume when the closing price is:",["Higher than yesterday's","Lower than yesterday's","Equal","Gapping"],0,"It subtracts volume when the close is lower."],
+["OBV 1 crossing above a rising OBV 20 is a:",["Sell signal","No signal","Buy signal","Gap"],2,"Divergence between volume and price can precede a reversal."],
+["Which is NOT a tenet of Dow Theory?",["The market discounts everything","The market has four trends","Averages must confirm each other","A trend remains in effect until a clear reversal"],1,"Dow Theory says the market has three trends."],
+["Which feature is a hanging man unlikely to have?",["It is a bullish reversal pattern after a down move","A small real body","A long lower shadow","It is a bearish reversal pattern after an up move"],0,"A bullish reversal after a fall describes a hammer."],
+["The piercing pattern is most likely:",["A three-candle pattern near the top","A two-candle pattern near the bottom of a congestion area","A two-candle pattern near the top","A three-candle pattern near the bottom"],1,"Sample question."],
+["Order clustering near support and resistance occurs because buy and sell orders:",["Accumulate near these levels","Disappear","Always execute","Are cancelled"],0,"Traders remember past reversal levels, so orders bunch up."],
+["Support and resistance help traders define:",["Dividends","Stop-loss and take-profit zones","Tax","Beta"],1,"They aid risk management."],
+["Diagonal lines connecting higher lows or lower highs are ____ support/resistance.",["Horizontal","Pivot","Trendline","Psychological"],2,"An upward-sloping line is support in a bull trend."],
+["A price bouncing off its 50 DMA is an example of ____ support.",["Horizontal","Pivot","Psychological","Moving average"],3,"Moving averages are dynamic support and resistance."],
+["Fibonacci support and resistance levels are derived from ratios such as:",["23.6%, 38.2%, 61.8%","10%, 20%, 30%","25%, 50%, 75%","5%, 10%, 15%"],0,"They are used on retracements from a swing high."],
+["Round numbers like Nifty 25,000 are examples of ____ levels.",["Pivot","Psychological","Horizontal only","Trendline"],1,"Round numbers often act as barriers."],
+["Role reversal occurs because of trapped traders exiting at breakeven, shift in sentiment and:",["Auditor changes","Dividends","Repositioning of institutional orders","Index changes"],2,"All three are listed."],
+["Which candlestick patterns help validate a breakout?",["Doji only","Dark cloud only","Gaps only","Bullish engulfing and hammer with volume"],3,"Volume and candlestick confirmation both matter."],
+["A level that aligns across daily and weekly charts is:",["More significant","Less significant","Irrelevant","Invalid"],0,"Multi time frame analysis enhances reliability."],
+["In a pullback entry, the trader waits for price to:",["Gap up","Retest the broken level","Cross zero","Split"],1,"This confirms the role reversal."],
+["A stop-loss for a long trade is typically placed just:",["Above resistance","Far from support","Below support","At resistance"],2,"For shorts it is above resistance."],
+["A limitation of support and resistance is that levels are:",["Exact prices","Always respected","Fixed","Zones, not exact prices"],3,"There is also subjectivity in drawing them."],
+["In the case study, Nifty found strong support around ____ levels from May to Sep 2025.",["24,350","25,000","23,000","26,000"],0,"It was tested multiple times."],
+["Reliance Industries faced strong resistance around ____ levels before breaking out in Jan 2024.",["1,100","1,300","1,500","1,950"],1,"The resistance held from Oct 2021 to July 2023."],
+["A trendline can be drawn using wicks or closing prices and should be:",["Fixed forever","Never changed","Adjusted as new price data emerges","Deleted"],2,"The trendline helps with entry, exit and stop-loss."],
+["A trendline that moves sideways connecting horizontal highs and lows shows:",["A strong uptrend","A strong downtrend","A gap","Consolidation or a range-bound market"],3,"It indicates a rangebound market."],
+["A descending channel has lower highs and lower lows and indicates:",["Bearishness","Bullishness","Neutrality","A gap up"],0,"A horizontal channel indicates a sideways market."],
+["The width of a channel reflects:",["Dividends","Volatility","Volume only","Trend direction"],1,"Wider channels mean higher volatility."],
+["Channel width targeting projects the breakout move using the channel's:",["Colour","Length","Height","Volume"],2,"A breakout targets a move equal to the channel height."],
+["Forcing lines to fit one's bias is a common pitfall in:",["Fundamental analysis","Accounting","Auditing","Drawing trendlines and channels"],3,"Lines should fit price, not bias."],
+["When monthly, weekly and daily moving averages move in the same direction, the probability of the trend continuing is:",["High","Low","Zero","Unknown"],0,"This is a multi time frame confirmation."],
+["When all three EMAs (13, 21, 34) are rising and move away from each other, it indicates:",["A weak market","A strong bull market","A sideways market","A gap"],1,"Falling and diverging EMAs indicate strong selling pressure."],
+["In a downtrend, price tends to resist around its:",["13 EMA","21 EMA","34 EMA","Zero line"],2,"Price < 13 EMA < 21 EMA < 34 EMA."],
+["A steep MACD suggests a powerful move, whereas a shallow one indicates:",["A strong trend","A buy signal","A gap","Lack of power"],3,"Fast MACD draws away from slow when momentum accelerates."],
+["A bulge of the fast MACD far above the slow MACD indicates a:",["Buying climax, which may lead to a sideways market or mild correction","Sell signal always","Gap","Bear market"],0,"The reverse applies in a downtrend."],
+["When MACD makes a double top or double bottom, a trend reversal is:",["Impossible","Likely","Certain","Irrelevant"],1,"This is a divergence-style signal."],
+["The MACD should be used:",["Alone","Only on daily charts","In conjunction with other indicators and price action","Only for intraday"],2,"It shows momentum changes, not price changes."],
+["Avoid stocks when the weekly or monthly MACD is clearly:",["Rising","Flat","Above zero","Trending down"],3,"Higher time frames carry more weight."],
+["A very strong bull market can keep RSI in the overbought zone:",["For a long period","Only for a day","Never","Only at open"],0,"Overbought does not always mean sell."],
+["ADX is normally plotted along with:",["Moving averages","+DMI and −DMI","RSI","OBV"],1,"The DMI lines indicate direction."],
+["ADX values range from:",["0 to 50","−100 to 100","0 to 100","0 to 1,000"],2,"It is plotted as a single line."],
+["RSC is also known as the Relative Strength Indicator or:",["MACD","ADX","OBV","Price Relative Indicator"],3,"It uses a ratio chart to compare securities."],
+["RSC is normalised to:",["100","50","10","1,000"],0,"Values above 100 mean outperformance."],
+["OBV helps give advance warning of a trend reversal because volumes generally:",["Follow price","Precede price","Equal price","Are random"],1,"Divergence between OBV and price matters."],
+["The trend is very bullish if OBV 1 zigzags above a steadily rising:",["MACD","RSI","OBV 20","ADX"],2,"This is read on the weekly or monthly chart."],
+];
+Q.forEach(q=>{if(q[1].some(o=>/^all of/i.test(o)))return;const c=q[1][q[2]];for(let i=q[1].length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[q[1][i],q[1][j]]=[q[1][j],q[1][i]];}q[2]=q[1].indexOf(c);});
+const $=i=>document.getElementById(i);let ans={},all=false;
+$("t").textContent=Q.length;
+function sc(){let r=0,w=0;for(const i in ans)ans[i]==Q[i][2]?r++:w++;return{r,w,s:r-.25*w}}
+function render(){$("l").innerHTML=Q.map((q,i)=>{const d=(i in ans)||all;
+return `<div class="q${d?" d":""}"><small>Q${i+1}</small><div class="qt">${q[0]}</div>`+q[1].map((o,j)=>`<button class="o${d?(j==q[2]?" ok":ans[i]===j?" no":""):""}" ${d?"disabled":""} onclick="ans[${i}]=${j};render()">${"ABCD"[j]}. ${o}</button>`).join("")+`<div class="ex"><b>Answer: ${"ABCD"[q[2]]}.</b> ${q[3]}</div></div>`}).join("");
+$("a").textContent=Object.keys(ans).length;$("c").textContent=sc().s.toFixed(2)}
+$("sa").onclick=()=>{all=!all;render()};
+$("rs").onclick=()=>{ans={};all=false;$("r").style.display="none";render();scrollTo(0,0)};
+$("f").onclick=()=>{const s=sc(),p=(s.s/Q.length*100).toFixed(1);$("r").style.display="block";$("r").innerHTML=`<b>Result:</b> Correct ${s.r} · Wrong ${s.w} · Unattempted ${Q.length-s.r-s.w}<br>Net score <b>${s.s.toFixed(2)}/${Q.length}</b> (${p}%) – ${p>=60?"✅ above 60%":"❌ below 60%"}`;scrollTo(0,0)};
+render();
+</script></body></html>

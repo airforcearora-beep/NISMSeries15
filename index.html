@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NISM Series XV: Research Analyst Practice Portal</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --primary-hover: #1d4ed8;
+            --accent: #059669;
+            --accent-hover: #047857;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px 16px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 32px;
+            padding: 24px 16px;
+            background: var(--card-bg);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        header h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-bottom: 6px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        /* Mock Paper Highlight Section */
+        .mock-section {
+            background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 100%);
+            border: 1px solid #a7f3d0;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 36px;
+            text-align: center;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .mock-section h2 {
+            font-size: 1.3rem;
+            color: #065f46;
+            margin-bottom: 8px;
+        }
+
+        .mock-section p {
+            color: #047857;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        .btn-mock {
+            display: inline-block;
+            background-color: var(--accent);
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05rem;
+            padding: 14px 28px;
+            border-radius: 8px;
+            transition: background-color 0.2s, transform 0.1s;
+            box-shadow: 0 2px 4px rgba(5, 150, 105, 0.3);
+        }
+
+        .btn-mock:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-1px);
+        }
+
+        .btn-mock:active {
+            transform: translateY(0);
+        }
+
+        /* Chapters Section */
+        .section-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 14px;
+        }
+
+        .btn-chapter {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 16px 20px;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+        }
+
+        .btn-chapter:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            background-color: #eff6ff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.1);
+        }
+
+        .btn-chapter span.badge {
+            font-size: 0.8rem;
+            font-weight: 500;
+            background-color: #f1f5f9;
+            color: var(--text-muted);
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        .btn-chapter:hover span.badge {
+            background-color: #dbeafe;
+            color: var(--primary);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.4rem;
+            }
+            .btn-mock {
+                width: 100%;
+                padding: 14px 16px;
+            }
+            .chapter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>NISM Series XV: Research Analyst</h1>
+        <p>Chapter-Wise MCQ Practice & Full Mock Examination Portal</p>
+    </header>
+
+    <!-- Separate Highlighted Section for Full Mock Paper -->
+    <section class="mock-section">
+        <h2>Final Assessment</h2>
+        <p>Test your complete preparation with the full-length mock examination.</p>
+        <a href="nism_xv_full_mock_paper.html" class="btn-mock">Start Full Mock Paper &rarr;</a>
+    </section>
+
+    <!-- Chapter-Wise Practice Section -->
+    <section>
+        <h2 class="section-title">Chapter-Wise Practice Tests</h2>
+        <div class="chapter-grid">
+            <a href="nism_xv_chapter1_mcq.html" class="btn-chapter">
+                <span>Chapter 1</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter2_mcq.html" class="btn-chapter">
+                <span>Chapter 2</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter3_mcq.html" class="btn-chapter">
+                <span>Chapter 3</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter4_mcq.html" class="btn-chapter">
+                <span>Chapter 4</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter5_mcq.html" class="btn-chapter">
+                <span>Chapter 5</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter6_mcq.html" class="btn-chapter">
+                <span>Chapter 6</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter7_mcq.html" class="btn-chapter">
+                <span>Chapter 7</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter8_mcq (1).html" class="btn-chapter">
+                <span>Chapter 8</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter9_mcq (1).html" class="btn-chapter">
+                <span>Chapter 9</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter10_mcq (1).html" class="btn-chapter">
+                <span>Chapter 10</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter11_mcq.html" class="btn-chapter">
+                <span>Chapter 11</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter12_mcq.html" class="btn-chapter">
+                <span>Chapter 12</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter13_mcq.html" class="btn-chapter">
+                <span>Chapter 13</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter14_mcq.html" class="btn-chapter">
+                <span>Chapter 14</span>
+                <span class="badge">MCQs</span>
+            </a>
+            <a href="nism_xv_chapter15_mcq.html" class="btn-chapter">
+                <span>Chapter 15</span>
+                <span class="badge">MCQs</span>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Select a chapter above to begin practicing.</p>
+    </footer>
+</div>
+
+</body>
+</html>
